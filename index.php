@@ -131,7 +131,7 @@ function get_pokemon() {
         get_pokemon();
     }
 
-*/
+
 
 function buscar_dia($dia_buscado){
 
@@ -151,8 +151,7 @@ function buscar_dia($dia_buscado){
         "Domingo" => "Sunday"
     );
 
-    foreach($dias as $español => $ingles) {
-        if($dia_buscado === $español) {
+    foreach($dias as $español => $ingles) {        if($dia_buscado === $español) {
             echo "\n\t El día $dia_buscado se escribe en inglés $ingles";
             break;
         }
@@ -162,7 +161,16 @@ function buscar_dia($dia_buscado){
 }
 
 
-$dia_buscado = "miercoles";
+$dia_buscado = "lunes";
 buscar_dia($dia_buscado);
+*/
+function sumar(...$argumentos) {
+    $resultado=0;
+    foreach($argumentos as $valor){
+        $resultado+=$valor;
 
+    }
+echo "el resultado de la suma es: $resultado";
+}
+sumar(1,2,3,4,5)
 ?>
